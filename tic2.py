@@ -35,6 +35,19 @@ def check4win(board):
     else:
         return False
 
+#main 
+def playerMove():
+    while True:
+   #get the user's move
+    move = raw_input("Make a move! Enter a number 1-9")
+    #validate input
+    try: 
+        int(move)
+    except:
+        print "Invalid input"
+    #return cell
+    return move
+
 
 board = [' ']* 10
 board[1]= 'o'
@@ -42,10 +55,15 @@ board[5]= 'o'
 board[9]= 'o'
 
 print_board(board)
+
+playerMove()
+
 check4win(board)
+
 
 done = check4win(board)
 if done == False:
     print "keep playing!"
 else: 
     print "We have a winner!"
+
