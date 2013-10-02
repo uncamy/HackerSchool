@@ -49,8 +49,41 @@ def playerMove():
         except ValueError:
             print "Invalid input"
 
+def computerMove():
+    # look at board
+
+    
+        # input the realmove
+#computer possible moves
+def possibleMove(player, tempBoard, depth)
+    # id available spaces
+
+    # score the available moves
+      if check4win() = 'x':
+          score = -1
+          return score
+      elif check4win() = 'o':
+          score = 1
+          return score
+      else:
+          if 
+          score = 0
+          return 
+    # id best move for turn
+
+    # make the move (return the # of that move)
+def checkEmpty(board):
+    for i in board:
+        i+=1
+        if (board[i] == ' '):
+            return i
+        else: 
+            reutrn 0
+
+
 board= [' ']*10
 print_board(board)
+
 #Handle user move
 movecounter = 0
 
