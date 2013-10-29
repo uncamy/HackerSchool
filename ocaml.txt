@@ -1,0 +1,78 @@
+
+-expressive static type system
+-more light weight than a lang such a java
+(fun x -> x *2);;
+int -> int = <fun> 
+    type inferance here based on the function and it allows you 
+
+types-
+ improve preformance
+ the fastest comes from knowing the types 
+ great for catching errors
+
+Multiplication operators 
+ * is always a int (multiply two integers)
+ *. is always for floats (multiply two floats)
+ 
+
+Examples:
+let first_if_true test first second= 
+    if test first then first else second;;
+val first_if_true : ('a -> bool) -> 'a -> 'a -> 'a = <fun>
+    ****this is an example of genetic polymorphism ****
+let even x = x mod 2 = 0;;
+first_if_true even 3 4;;
+let empty_string s = s= "";;
+
+let number_and_string = (3, "three");;
+fst number_and_string;;
+pattern matching
+
+plus_x 10;; 
+
+let l = [1;2;3];;
+
+The complier checks these and recognizes that these patterns are exhaustive 
+let get_first l =
+    match l with 
+    | [] -> 0
+    | hd :: tl -> hd
+  ;;
+
+
+***functional languages need a good way to handle recursion ***
+Some 3;;
+
+None;;
+*returns the `a  option 
+let first l = match l with [] -> None
+    | hd :: _ -> Some 
+
+
+let get_first l = 
+    match l with 
+    | hd :: _tl -> Some hd
+    | [] -> None
+
+let rec get_last l =
+    match l with 
+    | [] -> None
+    | hd :: [] -> Some hd
+    | _hd :: tl -> get_last tl
+
+let rec destutter l = 
+    match l with 
+    | [] -> []
+    | [x] -> [x]
+    | hd1 :: hd2 :: rest -> 
+      if hd1 =hd2 
+      then destutter (hd2 :: rest)
+      else hd1 :: destutter (hd2 ::rest)
+
+select vs epoll 
+       select requires you check linearly so that because an issue for large calls 
+       epoll is a bit more effiecient 
+
+blocking and non-blocking I/O in UIX 
+	 you almost always have use blocking
+	 machineray for error handling
