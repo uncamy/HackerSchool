@@ -1,6 +1,6 @@
 HackerSchool
 ============
-This file contains a wide variety of small projects and tutorials from Hacker School (not a complete list).
+This is a hodgepodge of small projects and tutorials from Hacker School (not a complete list).
 
 <h4>Tic Tac Toe</h4>
 <strong>Final_tictactoe.py</strong><br/>
