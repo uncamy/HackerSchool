@@ -12,7 +12,7 @@ The algorithm works and I learned a ton about recursion. The actual game needs m
 Part of a tutorial led by Tom on web sockets
 
 <h4>Chat Server</h4>
-<strong>chat_server.py</strong>
+<strong>chat_server.py</strong><br/>
 My first chat server!
 
 <h4>Tutorials</h4>
